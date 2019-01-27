@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+// Partials
+@import 'scss/variables';
+
+// Global Styles
+html, body {
+  font-family: $custom-font;
+  background-image: url($lightpaperfibers-bg);
+}
