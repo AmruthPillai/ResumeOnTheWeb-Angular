@@ -4,10 +4,16 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { LandingComponent } from './sections/landing/landing.component';
+import { HexagonComponent } from './sections/landing/hexagon/hexagon.component';
+import { NavigationComponent } from './sections/navigation/navigation.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LandingComponent,
+    HexagonComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
