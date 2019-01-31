@@ -11,13 +11,15 @@ import { IconsModule } from './modules/icons.module';
 import { LandingComponent } from './sections/landing/landing.component';
 import { HexagonComponent } from './sections/landing/hexagon/hexagon.component';
 import { NavigationComponent } from './sections/navigation/navigation.component';
+import { SocialComponent } from './sections/landing/social/social.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
     HexagonComponent,
-    NavigationComponent
+    NavigationComponent,
+    SocialComponent
   ],
   imports: [
     BrowserModule,

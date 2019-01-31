@@ -14,6 +14,7 @@ export class NavigationComponent implements OnInit {
     anime({
       targets: 'nav',
       translateY: '100',
+      delay: 1000,
       easing: 'easeInOutQuad'
     });
   }
