@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import anime from 'node_modules/animejs/lib/anime.es.js';
 
 @Component({
   selector: 'app-navigation',
@@ -10,6 +11,11 @@ export class NavigationComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    anime({
+      targets: 'nav',
+      translateY: '100',
+      easing: 'easeInOutQuad'
+    });
   }
 
 }
