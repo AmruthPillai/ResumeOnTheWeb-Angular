@@ -1,7 +1,5 @@
 // Bootstrap
-@import '~node_modules/bootstrap/scss/functions';
-@import '~node_modules/bootstrap/scss/variables';
-@import '~node_modules/bootstrap/scss/mixins';
+@import "~bootstrap/scss/bootstrap";
 
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
@@ -14,6 +12,7 @@ html,
 body {
   font-size: .9em;
   font-family: $custom-font;
+  font-weight: 400;
 }
 
 p {

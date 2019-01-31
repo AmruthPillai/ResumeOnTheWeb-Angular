@@ -1,12 +1,59 @@
-#landing {
-  height: 40em;
-  position: relative;
-  top: 50%;
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+#subtitle {
+  color: #BBB;
+
+  .designer:hover {
+    color: $green;
+  }
+
+  .developer:hover {
+    color: $orange;
+  }
+
+  .photographer:hover {
+    color: $pink;
+  }
+
+  .writer:hover {
+    color: $red;
+  }
 }
 
-#logo {
+#social {
+  span {
+    width: 26px;
+    height: 26px;
 
-  img {
-    max-height: 80em;
+    font-size: 16px;
+  }
+
+  .facebook {
+    background-color: #3B5998;
+  }
+
+  .instagram {
+    background-color: #E1306C;
+  }
+
+  .twitter {
+    background-color: #08A0E9;
+  }
+
+  .github {
+    background-color: #211F1F;
+  }
+
+  .googleplus {
+    background-color: #DC4E41;
+  }
+
+  .dribbble {
+    background-color: #EA4C89;
+  }
+
+  .linkedin {
+    background-color: #0077B5;
   }
 }
