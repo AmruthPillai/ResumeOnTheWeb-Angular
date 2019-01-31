@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+
+import { BootstrapModule } from './modules/bootstrap.module';
 import { IconsModule } from './modules/icons.module';
 
 import { LandingComponent } from './sections/landing/landing.component';
@@ -19,6 +21,7 @@ import { NavigationComponent } from './sections/navigation/navigation.component'
   ],
   imports: [
     BrowserModule,
+    BootstrapModule,
     IconsModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production
