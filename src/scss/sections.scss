@@ -1,0 +1,24 @@
+section {
+  .heading {
+    border-bottom: 1px solid #EEE;
+
+    h6 {
+      color: #BBB;
+      font-size: 1em;
+    }
+  }
+
+  &:hover {
+    .heading h6.red {
+      color: $red
+    }
+
+    .heading h6.green {
+      color: $green
+    }
+    
+    .heading h6.blue {
+      color: $blue
+    }
+  }
+}

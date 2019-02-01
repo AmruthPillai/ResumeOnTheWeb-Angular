@@ -12,6 +12,9 @@ import { LandingComponent } from './sections/landing/landing.component';
 import { HexagonComponent } from './sections/landing/hexagon/hexagon.component';
 import { NavigationComponent } from './sections/navigation/navigation.component';
 import { SocialComponent } from './sections/landing/social/social.component';
+import { LeftComponent } from './sections/left/left.component';
+import { RightComponent } from './sections/right/right.component';
+import { AboutMeComponent } from './sections/left/about-me/about-me.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { SocialComponent } from './sections/landing/social/social.component';
     LandingComponent,
     HexagonComponent,
     NavigationComponent,
-    SocialComponent
+    SocialComponent,
+    LeftComponent,
+    RightComponent,
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,

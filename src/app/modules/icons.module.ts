@@ -12,6 +12,9 @@ import {
   faDribbble,
   faLinkedinIn
 } from '@fortawesome/free-brands-svg-icons';
+import {
+  faChevronDown
+} from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
   declarations: [],
@@ -28,6 +31,9 @@ export class IconsModule {
       faGooglePlusG,
       faDribbble,
       faLinkedinIn
+    );
+    library.add(
+      faChevronDown
     );
   }
 }
