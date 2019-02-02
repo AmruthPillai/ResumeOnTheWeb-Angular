@@ -1,5 +1,6 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -22,6 +23,7 @@ import { SkillsComponent } from './sections/left/skills/skills.component';
 import { SkillComponent } from './sections/left/skills/skill/skill.component';
 import { LanguagesComponent } from './sections/left/languages/languages.component';
 import { LanguageComponent } from './sections/left/languages/language/language.component';
+import { BlogComponent } from './sections/left/blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -38,12 +40,14 @@ import { LanguageComponent } from './sections/left/languages/language/language.c
     SkillsComponent,
     SkillComponent,
     LanguagesComponent,
-    LanguageComponent
+    LanguageComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
     InViewportModule,
     BootstrapModule,
+    HttpClientModule,
     IconsModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production

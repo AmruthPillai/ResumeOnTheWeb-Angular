@@ -1,0 +1,22 @@
+@import '~src/scss/variables';
+
+.article {
+  img {
+    width: 140px;
+    height: 60px;
+    object-fit: cover;
+    transition: $default-transition;
+  }
+  span {
+    line-height: 1.6em;
+  }
+}
+
+.article {
+  &:hover {
+    img {
+      height: 100px;
+      transition: $default-transition;
+    }
+  }
+}

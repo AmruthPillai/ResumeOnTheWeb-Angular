@@ -1,0 +1,18 @@
+<app-section heading="Blog">
+  <div id="blog" class="my-4">
+    <ul class="list-group">
+      <li class="cursor-pointer article list-group-item p-4" *ngFor="let article of articles" (click)="onClick(article.link)">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex w-100 justify-content-start align-items-center">
+            <img class="float-left" [src]="article.thumbnail" [alt]="article.title">
+            <div class="ml-3">
+              <span>{{ article.title }}</span>
+              <fa-icon class="small text-muted ml-1" [icon]="['fas', 'external-link-alt']"></fa-icon>
+            </div>
+          </div>
+          <span class="ml-2 flex-shrink-1 text-right small text-muted">{{ article.pubDate | date }}</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</app-section>
