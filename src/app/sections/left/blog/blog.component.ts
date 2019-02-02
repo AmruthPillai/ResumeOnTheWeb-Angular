@@ -9,7 +9,7 @@ import anime from 'animejs/lib/anime.es.js';
 })
 export class BlogComponent implements OnInit {
 
-  articles: Array<Object>;
+  articles: Array<any>[4];
 
   constructor(private resource: ResourceService) { }
 
