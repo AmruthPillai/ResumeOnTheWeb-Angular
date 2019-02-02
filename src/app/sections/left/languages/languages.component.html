@@ -1,0 +1,7 @@
+<app-section heading="Languages">
+  <div id="languages">
+    <div *ngFor="let language of languages">
+      <app-language [name]="language.name" [percent]="language.percent"></app-language>
+    </div>
+  </div>
+</app-section>

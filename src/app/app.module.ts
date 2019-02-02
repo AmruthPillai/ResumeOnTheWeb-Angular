@@ -20,6 +20,8 @@ import { PersonalStatementComponent } from './sections/left/personal-statement/p
 import { SectionComponent } from './components/section/section.component';
 import { SkillsComponent } from './sections/left/skills/skills.component';
 import { SkillComponent } from './sections/left/skills/skill/skill.component';
+import { LanguagesComponent } from './sections/left/languages/languages.component';
+import { LanguageComponent } from './sections/left/languages/language/language.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { SkillComponent } from './sections/left/skills/skill/skill.component';
     PersonalStatementComponent,
     SectionComponent,
     SkillsComponent,
-    SkillComponent
+    SkillComponent,
+    LanguagesComponent,
+    LanguageComponent
   ],
   imports: [
     BrowserModule,
