@@ -17,10 +17,9 @@ export class SkillsComponent implements OnInit {
     if (inViewport) {
       anime({
         targets: '.skill',
-        translateX: '20',
         opacity: 1,
         easing: 'easeInOutExpo',
-        delay: anime.stagger(100)
+        delay: anime.stagger(150)
       });
     }
   }
