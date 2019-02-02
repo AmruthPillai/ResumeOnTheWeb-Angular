@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ResourceService } from 'src/app/services/resource.service';
-import { Url } from 'url';
+import anime from 'animejs/lib/anime.es.js';
 
 @Component({
   selector: 'app-blog',
@@ -18,13 +18,22 @@ export class BlogComponent implements OnInit {
       .subscribe(data => {
         this.articles = data['items'];
         this.articles = this.articles.slice(0, 4);
-
-        console.log(this.articles);
       });
   }
 
   onClick(link: string) {
     window.open(link, '_blank');
+  }
+
+  animate(inViewport: Boolean) {
+    if (inViewport) {
+      anime({
+        targets: '.article',
+        opacity: 1,
+        easing: 'easeInOutExpo',
+        delay: anime.stagger(80)
+      });
+    }
   }
 
 }

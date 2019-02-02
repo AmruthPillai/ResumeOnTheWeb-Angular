@@ -1,6 +1,4 @@
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/mixins";
+@import "~src/scss/variables";
 
 section {
   .heading {
@@ -9,6 +7,7 @@ section {
     h6 {
       color: #BBB;
       font-size: 1em;
+      transition: $default-transition;
     }
 
     @include media-breakpoint-down(sm) {
@@ -19,16 +18,9 @@ section {
   }
 
   &:hover {
-    .heading h6.red {
-      color: $red
-    }
-
-    .heading h6.green {
-      color: $green
-    }
-
-    .heading h6.blue {
-      color: $blue
+    .heading h6 {
+      color: $red;
+      transition: $default-transition;
     }
   }
 }

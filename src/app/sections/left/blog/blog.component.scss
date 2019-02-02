@@ -1,6 +1,8 @@
 @import '~src/scss/variables';
 
 .article {
+  opacity: 0;
+
   img {
     width: 140px;
     height: 60px;

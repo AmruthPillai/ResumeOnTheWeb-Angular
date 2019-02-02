@@ -1,0 +1,46 @@
+@import '~src/scss/variables';
+
+.hobby {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  width: 8em;
+  height: 8em;
+  border: 1px dotted #BBB;
+  border-radius: 50%;
+
+  margin: 10px 0;
+
+  svg {
+    width: 3em;
+    height: 3em;
+    text-align: center;
+    margin-top: 30px;
+    transition: $default-transition;
+  }
+
+  p {
+    display: none;
+    opacity: 0;
+    flex: 0 1 100%;
+    font-size: .8em;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #444;
+    transition: $default-transition;
+  }
+
+  &:hover {
+    svg {
+      margin-top: 20px;
+      transition: $default-transition;
+    }
+
+    p {
+      display: inline;
+      opacity: 100;
+      transition: $default-transition;
+    }
+  }
+}
