@@ -4,13 +4,17 @@
   opacity: 0;
 
   img {
-    min-width: 140px;
+    width: 120px;
     height: 60px;
     object-fit: cover;
     transition: $default-transition;
   }
-  span {
+  .title {
+    color: #333;
+  }
+  .date {
     line-height: 1.6em;
+    color: #BBB;
   }
 }
 
@@ -19,6 +23,9 @@
     img {
       height: 100px;
       transition: $default-transition;
+    }
+    .title {
+      color: $red;
     }
   }
 }
