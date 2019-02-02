@@ -25,6 +25,7 @@ import { LanguagesComponent } from './sections/left/languages/languages.componen
 import { LanguageComponent } from './sections/left/languages/language/language.component';
 import { BlogComponent } from './sections/left/blog/blog.component';
 import { HobbiesComponent } from './sections/left/hobbies/hobbies.component';
+import { VolunteerWorkComponent } from './sections/left/volunteer-work/volunteer-work.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { HobbiesComponent } from './sections/left/hobbies/hobbies.component';
     LanguagesComponent,
     LanguageComponent,
     BlogComponent,
-    HobbiesComponent
+    HobbiesComponent,
+    VolunteerWorkComponent
   ],
   imports: [
     BrowserModule,
