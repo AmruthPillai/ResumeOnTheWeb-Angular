@@ -4,7 +4,7 @@
   opacity: 0;
 
   img {
-    width: 140px;
+    min-width: 140px;
     height: 60px;
     object-fit: cover;
     transition: $default-transition;

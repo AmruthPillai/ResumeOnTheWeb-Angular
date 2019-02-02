@@ -4,9 +4,9 @@
       <li class="cursor-pointer article list-group-item p-4" *ngFor="let article of articles" (click)="onClick(article.link)">
         <div class="d-flex justify-content-between align-items-center">
           <div class="d-flex w-100 justify-content-start align-items-center">
-            <img class="float-left" [src]="article.thumbnail" [alt]="article.title">
+            <img class="float-left rounded" [src]="article.thumbnail" [alt]="article.title">
             <div class="ml-3">
-              <span>{{ article.title }}</span>
+              <span class="h6">{{ article.title }}</span>
               <fa-icon class="small text-muted ml-1" [icon]="['fas', 'external-link-alt']"></fa-icon>
             </div>
           </div>
