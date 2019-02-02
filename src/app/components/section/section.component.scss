@@ -1,3 +1,6 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
 section {
   .heading {
     border-bottom: 1px solid #EEE;
@@ -16,7 +19,7 @@ section {
     .heading h6.green {
       color: $green
     }
-    
+
     .heading h6.blue {
       color: $blue
     }

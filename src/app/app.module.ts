@@ -15,6 +15,9 @@ import { SocialComponent } from './sections/landing/social/social.component';
 import { LeftComponent } from './sections/left/left.component';
 import { RightComponent } from './sections/right/right.component';
 import { AboutMeComponent } from './sections/left/about-me/about-me.component';
+import { PersonalStatementComponent } from './sections/left/personal-statement/personal-statement.component';
+import { SectionComponent } from './components/section/section.component';
+import { SkillsComponent } from './sections/left/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { AboutMeComponent } from './sections/left/about-me/about-me.component';
     SocialComponent,
     LeftComponent,
     RightComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    PersonalStatementComponent,
+    SectionComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
