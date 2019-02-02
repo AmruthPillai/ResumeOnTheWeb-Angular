@@ -1,5 +1,6 @@
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
 
 section {
   .heading {
@@ -8,6 +9,12 @@ section {
     h6 {
       color: #BBB;
       font-size: 1em;
+    }
+
+    @include media-breakpoint-down(sm) {
+      h6 {
+        text-align: center;
+      }
     }
   }
 

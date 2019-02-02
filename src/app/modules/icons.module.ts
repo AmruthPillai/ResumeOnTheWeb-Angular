@@ -13,7 +13,8 @@ import {
   faLinkedinIn
 } from '@fortawesome/free-brands-svg-icons';
 import {
-  faChevronDown
+  faChevronDown,
+  faChevronRight
 } from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
@@ -33,7 +34,8 @@ export class IconsModule {
       faLinkedinIn
     );
     library.add(
-      faChevronDown
+      faChevronDown,
+      faChevronRight
     );
   }
 }
