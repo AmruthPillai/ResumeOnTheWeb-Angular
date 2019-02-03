@@ -26,7 +26,7 @@ export class AchievementsComponent implements OnInit {
     }
   ];
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
   }

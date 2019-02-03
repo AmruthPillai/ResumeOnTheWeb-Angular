@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./certifications.component.scss']
 })
 export class CertificationsComponent implements OnInit {
+
   certifications = [
     {
       title: 'Applied CS with Android',
@@ -30,5 +31,7 @@ export class CertificationsComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
+
 }

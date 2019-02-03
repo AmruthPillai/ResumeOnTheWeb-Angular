@@ -4,6 +4,8 @@
   opacity: 0;
 
   img {
+    min-width: 120px;
+    max-width: 120px;
     width: 120px;
     height: 60px;
     object-fit: cover;

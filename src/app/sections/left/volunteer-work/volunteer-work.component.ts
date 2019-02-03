@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./volunteer-work.component.scss']
 })
 export class VolunteerWorkComponent implements OnInit {
+
   volunteerWork = [
     {
       title: 'Lead Organizer of a Blood Donation Drive',
@@ -30,5 +31,7 @@ export class VolunteerWorkComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
+
 }

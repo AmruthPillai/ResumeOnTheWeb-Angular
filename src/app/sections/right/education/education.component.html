@@ -1,0 +1,18 @@
+<app-section heading="Education">
+  <ul id="education" class="list-group">
+    <li class="list-group-item" *ngFor="let item of education">
+      <div class="d-flex flex-column align-items-start">
+        <img class="icon" [src]="item.icon" [alt]="item.title" />
+      </div>
+      <div class="mt-3 d-flex justify-content-between align-items-center">
+        <div class="d-flex flex-column line-height-sm">
+          <span class="h6 font-weight-light">{{ item.title }} <small>({{ item.period }})</small></span>
+          <span class="font-weight-bold">{{ item.major }}</span>
+        </div>
+        <div class="d-flex">
+          <span class="grade text-right">{{ item.grade }}</span>
+        </div>
+      </div>
+    </li>
+  </ul>
+</app-section>

@@ -11,14 +11,13 @@ export class BlogComponent implements OnInit {
 
   articles: Array<any>[4];
 
-  constructor(private resource: ResourceService) { }
+  constructor(private resource: ResourceService) {}
 
   ngOnInit() {
-    this.resource.getBlogArticles()
-      .subscribe(data => {
-        this.articles = data['items'];
-        this.articles = this.articles.slice(0, 4);
-      });
+    this.resource.getBlogArticles().subscribe(data => {
+      this.articles = data['items'];
+      this.articles = this.articles.slice(0, 4);
+    });
   }
 
   onClick(link: string) {
