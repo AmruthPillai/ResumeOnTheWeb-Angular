@@ -5,14 +5,14 @@
   height: 60px;
 }
 
-span.h6 {
-  font-weight: 600;
-}
-
-#volunteer-work {
+#achievements {
   >li {
     padding-bottom: 1em;
     transition: $default-transition;
+
+    span {
+      line-height: 1.2em;
+    }
 
     &:hover {
       padding-top: 1.8em;
