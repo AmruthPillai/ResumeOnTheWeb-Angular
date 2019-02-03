@@ -20,4 +20,9 @@ export class LandingComponent implements OnInit {
     });
   }
 
+  scrollTo() {
+    const el = document.querySelector('#resume');
+    el.scrollIntoView();
+  }
+
 }
