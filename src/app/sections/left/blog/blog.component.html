@@ -6,8 +6,9 @@
           <div class="d-flex w-100 justify-content-start align-items-center">
             <img class="float-left rounded" [src]="article.thumbnail" [alt]="article.title">
             <div class="ml-3">
-              <span class="title h6">{{ article.title }}</span>
-              <fa-icon class="small text-muted ml-2" [icon]="['fas', 'external-link-alt']"></fa-icon>
+              <span class="title h6 d-flex justify-content-end align-items-center">{{ article.title }}
+                <fa-icon class="small text-muted ml-2" [icon]="['fas', 'external-link-alt']"></fa-icon>
+              </span>
             </div>
           </div>
           <span class="date ml-2 flex-shrink-1 text-right small">{{ article.pubDate | date }}</span>
