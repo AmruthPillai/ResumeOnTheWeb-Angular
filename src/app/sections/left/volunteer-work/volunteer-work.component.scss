@@ -1,3 +1,5 @@
+@import '~src/scss/variables';
+
 .icon {
   width: 60px;
   height: 60px;
@@ -5,4 +7,18 @@
 
 span.h6 {
   font-weight: 600;
+}
+
+#volunteer-work {
+  >li {
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    transition: $default-transition;
+
+    &:hover {
+      padding-top: 2.4em;
+      padding-bottom: 2.4em;
+      transition: $default-transition;
+    }
+  }
 }

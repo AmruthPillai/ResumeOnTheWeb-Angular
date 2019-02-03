@@ -1,21 +1,21 @@
 <app-section heading="Volunteer Work">
   <div class="d-flex align-items-start">
-    <div class="col-sm-12 col-lg-1 p-0">
-      <svg class="img-fluid icon mx-auto">
+    <div class="col-1 p-0 m-4 d-none d-md-block">
+      <svg class="img-fluid icon">
         <use xlink:href="#volunteer" />
       </svg>
     </div>
     <div class="col">
-      <div>
-        <div class="item d-flex flex-column px-2 pt-2 pb-4" *ngFor="let item of volunteerWork">
+      <ul class="list-group list-group-flush" id="volunteer-work">
+        <li class="list-group-item px-0 d-flex flex-column" *ngFor="let item of volunteerWork">
           <span class="h6">{{ item.title }}</span>
           <span>{{ item.description }}</span>
           <span *ngIf="item.link" class="small d-flex align-items-center">
             To know more,&nbsp;<a [href]="item.link" target="_blank">visit this link</a>
             <fa-icon class="small text-muted ml-1" [icon]="['fas', 'external-link-alt']"></fa-icon>
           </span>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
   </div>
 </app-section>
