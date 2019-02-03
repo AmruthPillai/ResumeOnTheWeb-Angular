@@ -7,7 +7,7 @@
       </div>
       <div class="col pl-3">
         <ul class="list-group" id="achievements">
-          <li class="list-group-item border-0 px-0 d-flex flex-column" *ngFor="let item of achievements">
+          <li class="list-group-item border-0 d-flex flex-column" *ngFor="let item of achievements">
             <span class="h6 font-weight-light" [innerHtml]="item.title"></span>
             <span class="font-weight-bold">{{ item.position }}</span>
           </li>

@@ -27,6 +27,7 @@ import { BlogComponent } from './sections/left/blog/blog.component';
 import { HobbiesComponent } from './sections/left/hobbies/hobbies.component';
 import { VolunteerWorkComponent } from './sections/left/volunteer-work/volunteer-work.component';
 import { AchievementsComponent } from './sections/left/achievements/achievements.component';
+import { CertificationsComponent } from './sections/left/certifications/certifications.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { AchievementsComponent } from './sections/left/achievements/achievements
     BlogComponent,
     HobbiesComponent,
     VolunteerWorkComponent,
-    AchievementsComponent
+    AchievementsComponent,
+    CertificationsComponent
   ],
   imports: [
     BrowserModule,
