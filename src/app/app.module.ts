@@ -30,6 +30,7 @@ import { AchievementsComponent } from './sections/left/achievements/achievements
 import { CertificationsComponent } from './sections/left/certifications/certifications.component';
 import { EducationComponent } from './sections/right/education/education.component';
 import { WorkExperienceComponent } from './sections/right/work-experience/work-experience.component';
+import { ProjectsComponent } from './sections/right/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { WorkExperienceComponent } from './sections/right/work-experience/work-e
     AchievementsComponent,
     CertificationsComponent,
     EducationComponent,
-    WorkExperienceComponent
+    WorkExperienceComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

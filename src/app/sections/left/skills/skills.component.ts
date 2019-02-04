@@ -22,7 +22,17 @@ export class SkillsComponent implements OnInit {
     {
       icon: 'nodejs',
       name: 'Backend Javascript Frameworks',
-      tech: 'Node.js/Express.js/MongoDB',
+      tech: 'Node.js/Express.js/Mongoose',
+    },
+    {
+      icon: 'python',
+      name: 'Python Scripting',
+      tech: 'Python 3/BeautifulSoup/PyMongo',
+    },
+    {
+      icon: 'database',
+      name: 'Database Management System',
+      tech: 'MySQL/Postgres/MongoDB',
     },
     {
       icon: 'android',
@@ -35,9 +45,9 @@ export class SkillsComponent implements OnInit {
       tech: 'Adobe Photoshop/Illustrator/XD & Sketch',
     },
     {
-      icon: 'python',
+      icon: 'tensorflow',
       name: 'Machine Learning',
-      tech: 'Python/R/TensorFlow',
+      tech: 'Scikit-Learn/TensorFlow/Keras',
     },
     {
       icon: 'seo',
