@@ -11,7 +11,7 @@
           <span class="h6 font-weight-light" [innerHtml]="item.title"></span>
           <div class="d-inline-block">
             <span class="font-weight-bold">{{ item.issuer }}</span>
-            <span *ngIf="item.link">&nbsp;| Certificate: <a class="d-inline-flex" [href]="item.link">
+            <span *ngIf="item.link">&nbsp;| Certificate: <a class="d-inline-flex" [href]="item.link" target="_blank">
               View Here <fa-icon class="small ml-2 text-muted" [icon]="['fas', 'external-link-alt']"></fa-icon></a></span>
           </div>
         </li>
