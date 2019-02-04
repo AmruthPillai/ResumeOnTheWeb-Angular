@@ -1,0 +1,21 @@
+<app-section heading="Work Experience">
+  <ul id="work-experience" class="list-group">
+    <li class="list-group-item" *ngFor="let item of workExperience">
+      <div class="d-flex flex-column align-items-start">
+        <img class="logo" [src]="item.logo" [alt]="item.title" />
+      </div>
+      <div class="mt-3 d-flex justify-content-between align-items-center">
+        <div class="d-flex flex-column line-height-sm">
+          <span class="h6 font-weight-light">{{ item.title }}</span>
+          <span class="font-weight-bold">{{ item.position }}</span>
+        </div>
+        <div class="d-flex">
+          <small class="period">({{ item.period }})</small>
+        </div>
+      </div>
+      <div class="d-flex mt-3">
+        <small><strong>Specialized in:</strong>&nbsp;{{ item.specialization }}</small>
+      </div>
+    </li>
+  </ul>
+</app-section>

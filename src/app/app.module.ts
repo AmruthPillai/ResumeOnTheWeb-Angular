@@ -29,6 +29,7 @@ import { VolunteerWorkComponent } from './sections/left/volunteer-work/volunteer
 import { AchievementsComponent } from './sections/left/achievements/achievements.component';
 import { CertificationsComponent } from './sections/left/certifications/certifications.component';
 import { EducationComponent } from './sections/right/education/education.component';
+import { WorkExperienceComponent } from './sections/right/work-experience/work-experience.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { EducationComponent } from './sections/right/education/education.compone
     VolunteerWorkComponent,
     AchievementsComponent,
     CertificationsComponent,
-    EducationComponent
+    EducationComponent,
+    WorkExperienceComponent
   ],
   imports: [
     BrowserModule,
