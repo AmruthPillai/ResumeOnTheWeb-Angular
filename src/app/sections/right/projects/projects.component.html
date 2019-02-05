@@ -1,15 +1,14 @@
 <app-section heading="Development Projects">
   <ul class="list-group">
-    <li class="list-group-item">
+    <li class="list-group-item" *ngFor="let project of projects">
       <div class="py-3 d-flex flex-column">
-        <h6>CS VTU Lab Manual</h6>
+        <h6 class="font-weight-bold">{{ project.title }}</h6>
         <div class="line-height-sm">
-          <span class="badge badge-primary">Open Source</span>
+          <span class="badge border px-2 mr-2" *ngFor="let tag of project.tags">{{ tag }}</span>
         </div>
-        <p class="mt-3">A one-stop solution to all the part and parcel of VTU CS Labs. Completely documeted for any CS
-          student under the VTU Syllabus to grasp and understand.</p>
-        <div>
-          <a class="btn btn-outline-dark" href="#">
+        <p class="mt-3">{{ project.description }}</p>
+        <div class="mt-2" *ngIf="project.github">
+          <a class="btn btn-outline-dark btn-sm" [href]="project.github" target="_blank">
             <fa-icon class="mr-1" [icon]="['fab', 'github']"></fa-icon>
             GitHub Repo
           </a>
@@ -18,3 +17,8 @@
     </li>
   </ul>
 </app-section>
+
+<button class="mt-3 btn btn-outline-primary btn-block">
+  View more projects on <fa-icon [icon]="['fab', 'github']"></fa-icon>
+  Github
+</button>
