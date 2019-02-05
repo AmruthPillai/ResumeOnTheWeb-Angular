@@ -31,6 +31,7 @@ import { CertificationsComponent } from './sections/left/certifications/certific
 import { EducationComponent } from './sections/right/education/education.component';
 import { WorkExperienceComponent } from './sections/right/work-experience/work-experience.component';
 import { ProjectsComponent } from './sections/right/projects/projects.component';
+import { PhotographyShowcaseComponent } from './sections/right/photography-showcase/photography-showcase.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { ProjectsComponent } from './sections/right/projects/projects.component'
     CertificationsComponent,
     EducationComponent,
     WorkExperienceComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    PhotographyShowcaseComponent
   ],
   imports: [
     BrowserModule,
