@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-projects',
-  templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss']
+  selector: 'app-development-projects',
+  templateUrl: './development-projects.component.html',
+  styleUrls: ['./development-projects.component.scss']
 })
-export class ProjectsComponent implements OnInit {
+export class DevelopmentProjectsComponent implements OnInit {
 
   projects = [
     {

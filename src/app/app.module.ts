@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
+import { LightboxModule } from 'ngx-lightbox';
 import { InViewportModule } from '@thisissoon/angular-inviewport';
 import { BootstrapModule } from './modules/bootstrap.module';
 import { IconsModule } from './modules/icons.module';
@@ -30,8 +31,9 @@ import { AchievementsComponent } from './sections/left/achievements/achievements
 import { CertificationsComponent } from './sections/left/certifications/certifications.component';
 import { EducationComponent } from './sections/right/education/education.component';
 import { WorkExperienceComponent } from './sections/right/work-experience/work-experience.component';
-import { ProjectsComponent } from './sections/right/projects/projects.component';
+import { DevelopmentProjectsComponent } from './sections/right/development-projects/development-projects.component';
 import { PhotographyShowcaseComponent } from './sections/right/photography-showcase/photography-showcase.component';
+import { DesignProjectsComponent } from './sections/right/design-projects/design-projects.component';
 
 @NgModule({
   declarations: [
@@ -56,8 +58,9 @@ import { PhotographyShowcaseComponent } from './sections/right/photography-showc
     CertificationsComponent,
     EducationComponent,
     WorkExperienceComponent,
-    ProjectsComponent,
-    PhotographyShowcaseComponent
+    DevelopmentProjectsComponent,
+    PhotographyShowcaseComponent,
+    DesignProjectsComponent
   ],
   imports: [
     BrowserModule,
@@ -65,6 +68,7 @@ import { PhotographyShowcaseComponent } from './sections/right/photography-showc
     BootstrapModule,
     HttpClientModule,
     IconsModule,
+    LightboxModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production
     }),

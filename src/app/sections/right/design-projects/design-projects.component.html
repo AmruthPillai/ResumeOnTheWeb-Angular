@@ -1,0 +1,34 @@
+<app-section heading="Design Projects">
+  <div>
+    <tabset [justified]="true">
+      <tab heading="Graphic Design">
+        <div class="gallery d-flex">
+          <div *ngFor="let image of graphicDesignProjects; let i = index">
+            <img [src]="image.src" (click)="open('graphic', i)" />
+          </div>
+        </div>
+      </tab>
+      <tab heading="Web Design">
+        <div class="gallery d-flex">
+          <div *ngFor="let image of webDesignProjects; let i = index">
+            <img [src]="image.src" (click)="open('web', i)" />
+          </div>
+        </div>
+      </tab>
+      <tab heading="UI/UX Design">
+        <div class="gallery d-flex">
+          <div *ngFor="let image of uiuxDesignProjects; let i = index">
+            <img [src]="image.src" (click)="open('uiux', i)" />
+          </div>
+        </div>
+      </tab>
+      <tab heading="Print Design">
+        <div class="gallery d-flex">
+          <div *ngFor="let image of printDesignProjects; let i = index">
+            <img [src]="image.src" (click)="open('print', i)" />
+          </div>
+        </div>
+      </tab>
+    </tabset>
+  </div>
+</app-section>

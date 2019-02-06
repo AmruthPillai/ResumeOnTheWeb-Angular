@@ -31,6 +31,7 @@
     "core-js": "^2.6.3",
     "intersection-observer": "^0.5.1",
     "ngx-bootstrap": "^3.2.0",
+    "ngx-lightbox": "^1.2.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.9.3",
     "zone.js": "~0.8.29"
