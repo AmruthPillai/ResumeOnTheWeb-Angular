@@ -13,7 +13,7 @@ export class SocialComponent implements OnInit {
   ngOnInit() {
     const tl = anime.timeline({
       easing: 'easeInOutExpo',
-      duration: 200
+      duration: 300
     });
 
     tl
@@ -43,6 +43,10 @@ export class SocialComponent implements OnInit {
     })
     .add({
       targets: '.linkedin',
+      opacity: 1,
+    })
+    .add({
+      targets: '.googlemaps',
       opacity: 1,
     });
   }

@@ -37,6 +37,8 @@ import { DesignProjectsComponent } from './sections/right/design-projects/design
 import { InstagramFeedComponent } from './sections/right/instagram-feed/instagram-feed.component';
 import { PdfDownloadComponent } from './sections/pdf-download/pdf-download.component';
 import { ContactComponent } from './sections/contact/contact.component';
+import { LocationComponent } from './sections/contact/location/location.component';
+import { ContactFormComponent } from './sections/contact/contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +68,9 @@ import { ContactComponent } from './sections/contact/contact.component';
     DesignProjectsComponent,
     InstagramFeedComponent,
     PdfDownloadComponent,
-    ContactComponent
+    ContactComponent,
+    LocationComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
