@@ -16,7 +16,8 @@ import {
 import {
   faChevronDown,
   faChevronRight,
-  faExternalLinkAlt
+  faExternalLinkAlt,
+  faFilePdf
 } from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
@@ -39,7 +40,8 @@ export class IconsModule {
     library.add(
       faChevronDown,
       faChevronRight,
-      faExternalLinkAlt
+      faExternalLinkAlt,
+      faFilePdf
     );
   }
 }

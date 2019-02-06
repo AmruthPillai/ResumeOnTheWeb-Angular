@@ -35,6 +35,8 @@ import { DevelopmentProjectsComponent } from './sections/right/development-proje
 import { PhotographyShowcaseComponent } from './sections/right/photography-showcase/photography-showcase.component';
 import { DesignProjectsComponent } from './sections/right/design-projects/design-projects.component';
 import { InstagramFeedComponent } from './sections/right/instagram-feed/instagram-feed.component';
+import { PdfDownloadComponent } from './sections/pdf-download/pdf-download.component';
+import { ContactComponent } from './sections/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +64,9 @@ import { InstagramFeedComponent } from './sections/right/instagram-feed/instagra
     DevelopmentProjectsComponent,
     PhotographyShowcaseComponent,
     DesignProjectsComponent,
-    InstagramFeedComponent
+    InstagramFeedComponent,
+    PdfDownloadComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
