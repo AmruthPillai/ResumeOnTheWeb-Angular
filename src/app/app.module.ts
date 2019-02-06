@@ -34,6 +34,7 @@ import { WorkExperienceComponent } from './sections/right/work-experience/work-e
 import { DevelopmentProjectsComponent } from './sections/right/development-projects/development-projects.component';
 import { PhotographyShowcaseComponent } from './sections/right/photography-showcase/photography-showcase.component';
 import { DesignProjectsComponent } from './sections/right/design-projects/design-projects.component';
+import { InstagramFeedComponent } from './sections/right/instagram-feed/instagram-feed.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { DesignProjectsComponent } from './sections/right/design-projects/design
     WorkExperienceComponent,
     DevelopmentProjectsComponent,
     PhotographyShowcaseComponent,
-    DesignProjectsComponent
+    DesignProjectsComponent,
+    InstagramFeedComponent
   ],
   imports: [
     BrowserModule,

@@ -13,4 +13,11 @@ export class ResourceService {
         '?rss_url=https://medium.com/feed/amruth-pillai'
     );
   }
+
+  getInstagramFeed() {
+    return this.http.get(
+      'https://api.instagram.com/v1/users/self/media/recent/' +
+        '?access_token=279179176.79a91cd.d72470259cd0463c8294ac5aa52c3a96'
+    );
+  }
 }

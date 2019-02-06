@@ -1,0 +1,23 @@
+@import '~src/scss/variables';
+
+#feed {
+  height: 350px;
+  overflow: scroll;
+
+  .photo {
+    opacity: 0;
+    transition: $default-transition;
+
+    img {
+      width: 130px;
+      height: 130px;
+      object-fit: cover;
+      margin: 2.5px;
+    }
+
+    &:hover {
+      opacity: 1 !important;
+      transition: $default-transition;
+    }
+  }
+}
