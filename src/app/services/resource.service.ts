@@ -21,4 +21,12 @@ export class ResourceService {
         '&count=8'
     );
   }
+
+  sendEmail(name: String, email: String, message: String) {
+    return this.http.post(
+      'https://us-central1-amruthpillai-resumeontheweb.cloudfunctions.net/sendEmail',
+      { name, email, message },
+      { responseType: 'text' }
+    );
+  }
 }

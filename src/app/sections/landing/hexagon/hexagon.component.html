@@ -1,4 +1,8 @@
-<div class="hexagon">
+<div class="d-none">
+  <img [src]="i" alt="Amruth Pillai" *ngFor="let i of images">
+</div>
+
+<div class="hexagon" [ngStyle]="{ 'background-image': 'url(' + currentImage + ')'}">
   <div class="hexTop"></div>
   <div class="hexBottom"></div>
 </div>

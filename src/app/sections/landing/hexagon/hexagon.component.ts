@@ -7,9 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HexagonComponent implements OnInit {
 
-  constructor() { }
+  currentImage;
+
+  images = [
+    './assets/photos/IMG_1880.jpg',
+    './assets/photos/IMG_5184.jpg',
+    './assets/photos/IMG_8295.jpg',
+    './assets/photos/IMG_9326.jpg',
+  ];
+
+  constructor() {
+    this.currentImage = this.images[0];
+  }
 
   ngOnInit() {
+    setInterval(() => this.currentImage = this.getRandomImage(), 5000);
+  }
+
+  getRandomImage(): String {
+    return this.images[Math.floor(Math.random() * this.images.length)];
   }
 
 }

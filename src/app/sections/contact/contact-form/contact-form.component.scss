@@ -1,4 +1,13 @@
+@import '~src/scss/variables';
+
 .captcha {
   transform: scale(0.9);
   transform-origin: 0;
+
+  @include media-breakpoint-down(sm) {
+    transform: scale(1);
+    transform-origin: 0;
+
+    margin-bottom: 1em;
+  }
 }

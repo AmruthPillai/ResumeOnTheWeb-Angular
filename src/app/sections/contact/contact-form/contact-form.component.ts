@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import anime from 'animejs/lib/anime.es.js';
+import { ResourceService } from 'src/app/services/resource.service';
 
 export interface FormModel {
   name?: String;
@@ -20,7 +21,7 @@ export class ContactFormComponent implements OnInit {
   siteKey: String;
   public formModel: FormModel = {};
 
-  constructor() {
+  constructor(private resource: ResourceService) {
     this.buttonText = 'Send';
     this.siteKey = environment.recaptchaSiteKey;
   }
@@ -29,6 +30,16 @@ export class ContactFormComponent implements OnInit {
   }
 
   onSubmit() {
+    this.resource.sendEmail(
+      this.formModel.name,
+      this.formModel.email,
+      this.formModel.message,
+    ).subscribe((data) => {
+      this.success();
+    });
+  }
+
+  success() {
     anime({
       targets: '.paper-plane',
       translateX: 100,

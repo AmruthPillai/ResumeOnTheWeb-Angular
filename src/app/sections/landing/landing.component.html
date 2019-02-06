@@ -1,30 +1,33 @@
-<div class="d-flex justify-content-center">
-  <app-hexagon></app-hexagon>
-</div>
-
-<div id="logo" class="w-100 mt-4 d-flex justify-content-center text-center">
-  <a class="text-center" href="https://www.amruthpillai.com">
-    <img class="img-fluid" src="./assets/logos/amruth-pillai.png" alt="Amruth Pillai" />
-  </a>
-</div>
-
-<div id="subtitle" class="row mt-3">
-  <div class="col d-flex justify-content-center">
-    <span class="designer mx-3">Designer</span> |
-    <span class="developer mx-3">Developer</span> |
-    <span class="photographer mx-3">Photographer</span> |
-    <span class="writer mx-3">Writer</span>
+<div class="container">
+  <div class="d-flex justify-content-center">
+    <app-hexagon></app-hexagon>
   </div>
-</div>
 
-<div class="row">
-  <div class="col">
-    <app-social></app-social>
+  <div id="logo" class="w-100 mt-4 d-flex justify-content-center text-center">
+    <a class="text-center" href="https://www.amruthpillai.com">
+      <img class="img-fluid" src="./assets/logos/amruth-pillai.png" alt="Amruth Pillai" />
+    </a>
   </div>
-</div>
 
-<div class="d-flex justify-content-center">
-  <button id="scroll-to-content" type="button" (click)="scrollTo()" class="btn btn-outline-primary" tooltip="Scroll to Content">
-    <fa-icon [icon]="['fas', 'chevron-down']"></fa-icon>
-  </button>
+  <div id="subtitle" class="row mt-3">
+    <div class="col d-flex justify-content-center">
+      <span class="designer mx-3">Designer</span> |
+      <span class="developer mx-3">Developer</span> |
+      <span class="photographer mx-3">Photographer</span> |
+      <span class="writer mx-3">Writer</span>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <app-social></app-social>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-center">
+    <button id="scroll-to-content" type="button" (click)="scrollTo()" class="btn btn-outline-primary" tooltip="Scroll to Content">
+      <fa-icon [icon]="['fas', 'chevron-down']"></fa-icon>
+    </button>
+  </div>
+
 </div>
