@@ -29,8 +29,6 @@ export class ContactFormComponent implements OnInit {
   }
 
   onSubmit() {
-    this.buttonText = 'Sent!';
-
     anime({
       targets: '.paper-plane',
       translateX: 100,
@@ -41,12 +39,14 @@ export class ContactFormComponent implements OnInit {
 
     anime({
       targets: '.button-text',
-      scaleX: 1.3,
-      scaleY: 1.3,
+      scaleX: 1.2,
+      scaleY: 1.2,
       translateY: -8,
       delay: 150,
       easing: 'easeInOutExpo',
     });
+
+    this.buttonText = 'Sent!';
   }
 
 }
