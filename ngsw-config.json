@@ -22,5 +22,16 @@
         ]
       }
     }
+  ],
+  "dataGroups": [
+    {
+      "name": "all",
+      "urls": ["**"],
+      "cacheConfig": {
+        "maxSize": 50,
+        "maxAge": "30d",
+        "strategy": "performance"
+      }
+    }
   ]
 }
