@@ -1,9 +1,6 @@
 @import '~src/scss/variables';
 
 #feed {
-  height: 350px;
-  overflow: scroll;
-
   .photo {
     opacity: 0;
     transition: $default-transition;
@@ -12,7 +9,7 @@
       width: 130px;
       height: 130px;
       object-fit: cover;
-      margin: 2.5px;
+      margin: 2px;
     }
 
     &:hover {

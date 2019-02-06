@@ -14,6 +14,7 @@ import {
   faLinkedinIn
 } from '@fortawesome/free-brands-svg-icons';
 import {
+  faCaretUp,
   faChevronDown,
   faChevronRight,
   faExternalLinkAlt,
@@ -40,6 +41,7 @@ export class IconsModule {
       faLinkedinIn
     );
     library.add(
+      faCaretUp,
       faChevronDown,
       faChevronRight,
       faExternalLinkAlt,

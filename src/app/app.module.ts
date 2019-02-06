@@ -42,6 +42,7 @@ import { PdfDownloadComponent } from './sections/pdf-download/pdf-download.compo
 import { ContactComponent } from './sections/contact/contact.component';
 import { LocationComponent } from './sections/contact/location/location.component';
 import { ContactFormComponent } from './sections/contact/contact-form/contact-form.component';
+import { FooterComponent } from './sections/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +74,8 @@ import { ContactFormComponent } from './sections/contact/contact-form/contact-fo
     PdfDownloadComponent,
     ContactComponent,
     LocationComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

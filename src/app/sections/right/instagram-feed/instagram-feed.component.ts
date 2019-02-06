@@ -26,13 +26,23 @@ export class InstagramFeedComponent implements OnInit {
         return;
       }
 
-      data['data'].forEach((post) => {
-        this.instaFeed.push({
-          image: post['images']['standard_resolution']['url'],
-          link: post['link'],
-        });
-      });
+      this.parseInstagramData(data['data']);
     });
+  }
+
+  parseInstagramData(data) {
+    let i = 0;
+    for (const post of data) {
+      this.instaFeed.push({
+        image: post['images']['standard_resolution']['url'],
+        link: post['link'],
+      });
+
+      i++;
+      if (i === 8) {
+        break;
+      }
+    }
   }
 
   animate(inViewport: Boolean) {
