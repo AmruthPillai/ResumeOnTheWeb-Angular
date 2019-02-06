@@ -1,14 +1,14 @@
 <app-section heading="Development Projects">
-  <ul class="list-group">
+  <ul id="dev-projects" class="list-group">
     <li class="list-group-item" *ngFor="let project of projects">
       <div class="py-3 d-flex flex-column">
         <h6 class="font-weight-bold">{{ project.title }}</h6>
         <div class="line-height-sm">
-          <span class="badge border px-2 mr-2" *ngFor="let tag of project.tags">{{ tag }}</span>
+          <span class="badge border border-dark px-2 mr-2" *ngFor="let tag of project.tags">{{ tag }}</span>
         </div>
         <p class="mt-3">{{ project.description }}</p>
         <div class="mt-2" *ngIf="project.github">
-          <a class="btn btn-outline-dark btn-sm" [href]="project.github" target="_blank">
+          <a class="btn btn-dark btn-sm" [href]="project.github" target="_blank">
             <fa-icon class="mr-1" [icon]="['fab', 'github']"></fa-icon>
             GitHub Repo
           </a>

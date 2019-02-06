@@ -13,7 +13,6 @@ interface Feed {
   styleUrls: ['./instagram-feed.component.scss']
 })
 export class InstagramFeedComponent implements OnInit {
-
   instaFeed: Array<Feed>;
 
   constructor(private resource: ResourceService) {
@@ -26,23 +25,13 @@ export class InstagramFeedComponent implements OnInit {
         return;
       }
 
-      this.parseInstagramData(data['data']);
-    });
-  }
-
-  parseInstagramData(data) {
-    let i = 0;
-    for (const post of data) {
-      this.instaFeed.push({
-        image: post['images']['standard_resolution']['url'],
-        link: post['link'],
+      data['data'].forEach(post => {
+        this.instaFeed.push({
+          image: post['images']['standard_resolution']['url'],
+          link: post['link']
+        });
       });
-
-      i++;
-      if (i === 8) {
-        break;
-      }
-    }
+    });
   }
 
   animate(inViewport: Boolean) {
@@ -55,5 +44,4 @@ export class InstagramFeedComponent implements OnInit {
       });
     }
   }
-
 }

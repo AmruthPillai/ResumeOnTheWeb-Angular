@@ -1,0 +1,15 @@
+@import '~src/scss/variables';
+
+#dev-projects {
+  >li {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    transition: $default-transition;
+
+    &:hover {
+      padding-top: 2.5em;
+      padding-bottom: 2.5em;
+      transition: $default-transition;
+    }
+  }
+}
