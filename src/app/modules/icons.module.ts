@@ -18,7 +18,8 @@ import {
   faChevronRight,
   faExternalLinkAlt,
   faFilePdf,
-  faMapMarkedAlt
+  faMapMarkedAlt,
+  faPaperPlane,
 } from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
@@ -43,7 +44,8 @@ export class IconsModule {
       faChevronRight,
       faExternalLinkAlt,
       faFilePdf,
-      faMapMarkedAlt
+      faMapMarkedAlt,
+      faPaperPlane,
     );
   }
 }

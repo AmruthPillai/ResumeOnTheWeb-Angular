@@ -7,6 +7,9 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
 import { LightboxModule } from 'ngx-lightbox';
+import { RecaptchaModule } from 'ng-recaptcha';
+import { FormsModule } from '@angular/forms';
+import { RecaptchaFormsModule } from 'ng-recaptcha/forms';
 import { InViewportModule } from '@thisissoon/angular-inviewport';
 import { BootstrapModule } from './modules/bootstrap.module';
 import { IconsModule } from './modules/icons.module';
@@ -74,11 +77,14 @@ import { ContactFormComponent } from './sections/contact/contact-form/contact-fo
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     InViewportModule,
     BootstrapModule,
     HttpClientModule,
     IconsModule,
     LightboxModule,
+    RecaptchaModule,
+    RecaptchaFormsModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production
     }),

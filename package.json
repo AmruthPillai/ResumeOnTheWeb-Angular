@@ -30,6 +30,7 @@
     "bootstrap": "^4.2.1",
     "core-js": "^2.6.3",
     "intersection-observer": "^0.5.1",
+    "ng-recaptcha": "^4.2.1",
     "ngx-bootstrap": "^3.2.0",
     "ngx-lightbox": "^1.2.0",
     "rxjs": "~6.4.0",

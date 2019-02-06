@@ -1,3 +1,44 @@
 <app-section heading="Want to say something?">
+  <form>
+    <div class="row d-flex py-2">
+      <div class="col-2">
+        <label class="control-label h6" for="name">Name</label>
+      </div>
+      <div class="col">
+        <input class="form-control" type="text" name="name" placeholder="John Appleseed" [(ngModel)]="formModel.name" required>
+        <small class="text-muted">Who in the world are you?</small>
+      </div>
+    </div>
 
+    <div class="row d-flex py-2">
+      <div class="col-2">
+        <label class="control-label h6" for="email">E-Mail</label>
+      </div>
+      <div class="col">
+        <input class="form-control" type="email" name="email" placeholder="someone@example.com" [(ngModel)]="formModel.email" required>
+        <small class="text-muted">How in the world would I be able to contact you back?</small>
+      </div>
+    </div>
+
+    <div class="row d-flex py-2">
+      <div class="col-2">
+        <label class="control-label h6" for="message">Message</label>
+      </div>
+      <div class="col">
+        <textarea class="form-control" name="message" rows="4" [(ngModel)]="formModel.message" required></textarea>
+        <small class="text-muted">What on earth would you possibly want to say?</small>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="offset-2 col-8">
+        <re-captcha name="captcha" [siteKey]="siteKey" [(ngModel)]="formModel.captcha" required></re-captcha>
+      </div>
+      <div class="col-2">
+        <button class="btn btn-primary btn-lg w-100 h-100">
+          <fa-icon [icon]="['fas', 'paper-plane']"></fa-icon>
+        </button>
+      </div>
+    </div>
+  </form>
 </app-section>
