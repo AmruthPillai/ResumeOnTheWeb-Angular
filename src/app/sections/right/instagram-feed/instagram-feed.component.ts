@@ -39,7 +39,7 @@ export class InstagramFeedComponent implements OnInit {
     if (inViewport) {
       anime({
         targets: '.photo',
-        opacity: .75,
+        opacity: 1,
         easing: 'easeInOutExpo',
         delay: anime.stagger(80)
       });
