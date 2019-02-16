@@ -8,8 +8,6 @@
 
 [![website amruthpillai.com](https://img.shields.io/website-up-down-green-red/http/amruthpillai.com.svg)](https://amruthpillai.com/)
 [![uptimerobot amruthpillai.com](https://img.shields.io/uptimerobot/ratio/m781987043-24c5463b2c0e80a630682bd0.svg?style=flat)](https://amruthpillai.com/)
-[![made-with-angular](https://img.shields.io/badge/made%20with-angular-red.svg?style=flat&logo=angular)](https://amruthpillai.com/)
-![](https://img.shields.io/badge/made%20with-bootstrap-blue.svg?style=flat&logo=bootstrap)
 [![last commit on github](https://img.shields.io/github/last-commit/amruthpillai/resumeontheweb-angular.svg?style=flat)](https://amruthpillai.com/)
 ![](https://img.shields.io/docker/automated/amruthpillai/resumeontheweb-angular.svg?style=flat)
 ![](https://img.shields.io/github/languages/code-size/amruthpillai/resumeontheweb-angular.svg?style=flat)
