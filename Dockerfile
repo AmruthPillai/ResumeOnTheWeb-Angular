@@ -3,7 +3,7 @@
 #########################
 
 # Base Image
-FROM node:11.6.0-alpine AS builder
+FROM node:alpine AS builder
 
 # Set Working Directory
 RUN mkdir /amruthpillai
@@ -14,15 +14,15 @@ ENV PATH /amruthpillai/node_modules/.bin:$PATH
 
 # Install and Cache App Dependencies
 RUN apk add git
-RUN npm install --loglevel=error -g @angular/cli@7.1.0
+RUN npm install -g @angular/cli
 COPY package.json /amruthpillai/package.json
-RUN npm install --loglevel=error
+RUN npm install
 
 # Copy App
 COPY . /amruthpillai
 
 # Generate Build
-RUN ng build --configuration stage
+RUN ng build --prod
 
 #########################
 ###### DEPLOY PHASE #####
