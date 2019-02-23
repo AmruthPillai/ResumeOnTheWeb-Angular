@@ -39,6 +39,8 @@ The number of things I've learnt from this project is truly endless, but I'll tr
 * Using the latest version of ![Bootstrap v4.3](https://img.shields.io/badge/Bootstrap-v4.3-blue.svg?style=flat&logo=bootstrap)
 * Makes use of ![Sass](https://img.shields.io/badge/sass-ce1477.svg?style=flat&logo=sass&logoColor=white) to style components smarter
 * Containerization using ![Docker](https://img.shields.io/badge/docker-blue.svg?style=flat&logo=docker&logoColor=white) *([Repo on Docker Hub](https://cloud.docker.com/repository/docker/amruthpillai/resumeontheweb-angular))*
+* Protected by ![Cloudflare](https://img.shields.io/badge/Cloudflare-orange.svg?style=flat&logo=cloudflare&logoColor=white) DNS and DDoS Attack Prevention
+* Powered by HTTP/2 protocol ([Read more on HTTP/2](https://developers.google.com/web/fundamentals/performance/http2/))
 * UI/UX Design from scratch *(Adobe Photoshop CC, Adobe XD)*
 * Package Management using npm.js *(http://npmjs.com/)*
 * Minification of HTML, CSS and JS *(to serve requests faster)*
