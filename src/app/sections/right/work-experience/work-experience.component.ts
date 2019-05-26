@@ -9,6 +9,13 @@ export class WorkExperienceComponent implements OnInit {
 
   workExperience = [
     {
+      logo: '/assets/work/dhiyo.svg',
+      title: 'GoDhiyo Solutions Pvt. Ltd.',
+      position: 'Full Stack Developer and Designer',
+      specialization: 'Angular, Node Python, Figma, Product Design',
+      period: 'Jul \'18 - current',
+    },
+    {
       logo: '/assets/work/betsol.png',
       title: 'Betsol Software (India) Pvt. Ltd.',
       position: 'Web Developer Intern',
