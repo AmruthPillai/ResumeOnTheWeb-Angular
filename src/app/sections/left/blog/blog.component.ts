@@ -9,14 +9,17 @@ import anime from 'animejs/lib/anime.es.js';
 })
 export class BlogComponent implements OnInit {
 
-  articles: Array<any>[4];
+  articles: Array<any>[5];
 
-  constructor(private resource: ResourceService) {}
+  constructor(private resource: ResourceService) { }
 
   ngOnInit() {
     this.resource.getBlogArticles().subscribe(data => {
-      this.articles = data['items'];
-      this.articles = this.articles.slice(0, 4);
+      console.log(data['items']);
+      this.articles = data['items'].filter((item) => {
+        return item.thumbnail.endsWith('.png');
+      });
+      this.articles = this.articles.slice(0, 5);
     });
   }
 

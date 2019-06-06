@@ -10,7 +10,7 @@ export class ResourceService {
   getBlogArticles() {
     return this.http.get(
       'https://api.rss2json.com/v1/api.json' +
-      '?rss_url=https://medium.com/feed/amruth-pillai'
+      '?rss_url=https://medium.com/feed/@amruthpillai'
     );
   }
 

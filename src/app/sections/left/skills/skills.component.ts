@@ -25,6 +25,11 @@ export class SkillsComponent implements OnInit {
       tech: 'Node.js/Express.js/Mongoose',
     },
     {
+      icon: 'flutter',
+      name: 'Cross Platform App Development',
+      tech: 'Dart/Flutter/Firebase',
+    },
+    {
       icon: 'python',
       name: 'Python Scripting',
       tech: 'Python 3/BeautifulSoup/PyMongo',

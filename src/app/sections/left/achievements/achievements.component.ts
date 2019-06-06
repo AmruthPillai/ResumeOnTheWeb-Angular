@@ -9,6 +9,10 @@ export class AchievementsComponent implements OnInit {
 
   achievements = [
     {
+      title: 'International Flutter Hackathon \'19 <small>(BLR Hub)</small>',
+      position: '1st Place'
+    },
+    {
       title: 'Venturesity Banyan Hack \'16',
       position: '1st Place'
     },
@@ -17,16 +21,16 @@ export class AchievementsComponent implements OnInit {
       position: '1st Place'
     },
     {
+      title: 'Smart India Hackathon \'17 <small>(National Level)</small>',
+      position: '1st Place'
+    },
+    {
       title: 'NIT Trichy - Pragyan Hackathon \'16',
       position: '3rd Place'
     },
-    {
-      title: 'Smart India Hackathon \'17 <small>(National Level)</small>',
-      position: '1st Place'
-    }
   ];
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit() {
   }
