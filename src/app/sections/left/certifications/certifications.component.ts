@@ -9,6 +9,11 @@ export class CertificationsComponent implements OnInit {
 
   certifications = [
     {
+      title: 'The Complete React Native and Redux Course',
+      issuer: 'Udemy',
+      link: 'https://www.udemy.com/certificate/UC-YKERES98/',
+    },
+    {
       title: 'Applied CS with Android',
       issuer: 'Google',
       link: 'https://drive.google.com/open?id=0B_jhT3IlN2-2VEtXYXFzQW9Oam8',
@@ -29,7 +34,7 @@ export class CertificationsComponent implements OnInit {
     }
   ];
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit() {
   }
