@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ResourceService } from 'src/app/services/resource.service';
-import anime from 'animejs/lib/anime.es.js';
+import anime from 'node_modules/animejs/lib/anime.es.js';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-blog',
@@ -8,6 +9,7 @@ import anime from 'animejs/lib/anime.es.js';
   styleUrls: ['./blog.component.scss']
 })
 export class BlogComponent implements OnInit {
+  faExternalLinkAlt = faExternalLinkAlt;
 
   articles: Array<any>[5];
 
@@ -15,7 +17,6 @@ export class BlogComponent implements OnInit {
 
   ngOnInit() {
     this.resource.getBlogArticles().subscribe(data => {
-      console.log(data['items']);
       this.articles = data['items'].filter((item) => {
         return item.thumbnail.endsWith('.png');
       });

@@ -12,7 +12,7 @@
           <span class="text-justify">{{ item.description }}</span>
           <span *ngIf="item.link" class="small d-flex align-items-center">
             To know more,&nbsp;<a [href]="item.link" target="_blank">visit this link</a>
-            <fa-icon class="small text-muted ml-1" [icon]="['fas', 'external-link-alt']"></fa-icon>
+            <fa-icon class="small text-muted ml-1" [icon]="faExternalLinkAlt"></fa-icon>
           </span>
         </li>
       </ul>

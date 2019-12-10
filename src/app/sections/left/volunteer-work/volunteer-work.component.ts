@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-volunteer-work',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./volunteer-work.component.scss']
 })
 export class VolunteerWorkComponent implements OnInit {
+  faExternalLinkAlt = faExternalLinkAlt;
 
   volunteerWork = [
     {

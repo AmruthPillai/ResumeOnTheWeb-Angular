@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment';
-import anime from 'animejs/lib/anime.es.js';
 import { ResourceService } from 'src/app/services/resource.service';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import anime from 'node_modules/animejs/lib/anime.es.js';
 
 export interface FormModel {
   name?: String;
@@ -16,6 +17,7 @@ export interface FormModel {
   styleUrls: ['./contact-form.component.scss']
 })
 export class ContactFormComponent implements OnInit {
+  faPaperPlane = faPaperPlane;
 
   buttonText: String;
   siteKey: String;

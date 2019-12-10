@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Lightbox } from 'ngx-lightbox';
+import { faDribbble } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-design-projects',
@@ -7,6 +8,8 @@ import { Lightbox } from 'ngx-lightbox';
   styleUrls: ['./design-projects.component.scss']
 })
 export class DesignProjectsComponent implements OnInit {
+  faDribbble = faDribbble;
+
   graphicDesignProjects = [
     {
       src: '/assets/design/graphic/bgbaliga.png',

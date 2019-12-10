@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import anime from 'node_modules/animejs/lib/anime.es.js';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-landing',
@@ -7,6 +8,7 @@ import anime from 'node_modules/animejs/lib/anime.es.js';
   styleUrls: ['./landing.component.scss']
 })
 export class LandingComponent implements OnInit {
+  faChevronDown = faChevronDown;
 
   constructor() { }
 

@@ -13,7 +13,6 @@ import { RecaptchaFormsModule } from 'ng-recaptcha';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { InViewportModule } from '@thisissoon/angular-inviewport';
 import { BootstrapModule } from './modules/bootstrap.module';
-import { IconsModule } from './modules/icons.module';
 
 import { LandingComponent } from './sections/landing/landing.component';
 import { NavigationComponent } from './sections/navigation/navigation.component';
@@ -82,7 +81,6 @@ import { FooterComponent } from './sections/footer/footer.component';
     InViewportModule,
     BootstrapModule,
     HttpClientModule,
-    IconsModule,
     FontAwesomeModule,
     LightboxModule,
     RecaptchaModule,

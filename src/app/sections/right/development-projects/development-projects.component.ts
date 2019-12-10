@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faGithubAlt } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-development-projects',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./development-projects.component.scss']
 })
 export class DevelopmentProjectsComponent implements OnInit {
+  faGithubAlt = faGithubAlt;
 
   projects = [
     {

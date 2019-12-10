@@ -15,11 +15,7 @@ export class ResourceService {
   }
 
   getInstagramFeed() {
-    return this.http.get(
-      'https://api.instagram.com/v1/users/self/media/recent/' +
-      '?access_token=279179176.79a91cd.12de8495c87b4876977f4775430a4a6b' +
-      '&count=8'
-    );
+    return this.http.get('https://www.instagram.com/amruthpillai/?__a=1');
   }
 
   sendEmail(name: String, email: String, message: String) {
