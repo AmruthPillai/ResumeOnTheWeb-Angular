@@ -20,7 +20,7 @@ import {
   faExternalLinkAlt,
   faFilePdf,
   faMapMarkedAlt,
-  faPaperPlane,
+  faPaperPlane
 } from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
@@ -47,7 +47,7 @@ export class IconsModule {
       faExternalLinkAlt,
       faFilePdf,
       faMapMarkedAlt,
-      faPaperPlane,
+      faPaperPlane
     );
   }
 }

@@ -1,9 +1,10 @@
-version: '3'
+version: "3"
+
 services:
-  moneyminr:
+  amruthpillai:
     container_name: amruthpillai
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - '80:80'
+      - "80:80"

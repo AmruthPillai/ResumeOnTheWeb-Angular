@@ -11,9 +11,11 @@
     object-fit: cover;
     transition: $default-transition;
   }
+
   .title {
     color: #333;
   }
+
   .date {
     line-height: 1.6em;
     color: #BBB;
@@ -26,6 +28,7 @@
       height: 100px;
       transition: $default-transition;
     }
+
     .title {
       color: $red;
     }

@@ -9,13 +9,13 @@ import { environment } from '../environments/environment';
 import { LightboxModule } from 'ngx-lightbox';
 import { RecaptchaModule } from 'ng-recaptcha';
 import { FormsModule } from '@angular/forms';
-import { RecaptchaFormsModule } from 'ng-recaptcha/forms';
+import { RecaptchaFormsModule } from 'ng-recaptcha';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { InViewportModule } from '@thisissoon/angular-inviewport';
 import { BootstrapModule } from './modules/bootstrap.module';
 import { IconsModule } from './modules/icons.module';
 
 import { LandingComponent } from './sections/landing/landing.component';
-import { HexagonComponent } from './sections/landing/hexagon/hexagon.component';
 import { NavigationComponent } from './sections/navigation/navigation.component';
 import { SocialComponent } from './sections/landing/social/social.component';
 import { LeftComponent } from './sections/left/left.component';
@@ -48,7 +48,6 @@ import { FooterComponent } from './sections/footer/footer.component';
   declarations: [
     AppComponent,
     LandingComponent,
-    HexagonComponent,
     NavigationComponent,
     SocialComponent,
     LeftComponent,
@@ -84,15 +83,15 @@ import { FooterComponent } from './sections/footer/footer.component';
     BootstrapModule,
     HttpClientModule,
     IconsModule,
+    FontAwesomeModule,
     LightboxModule,
     RecaptchaModule,
     RecaptchaFormsModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production
-    }),
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-}
+export class AppModule {}

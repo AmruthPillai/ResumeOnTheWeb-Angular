@@ -12,7 +12,8 @@
           "/*.js"
         ]
       }
-    }, {
+    },
+    {
       "name": "assets",
       "installMode": "lazy",
       "updateMode": "prefetch",
@@ -26,7 +27,9 @@
   "dataGroups": [
     {
       "name": "all",
-      "urls": ["**"],
+      "urls": [
+        "**"
+      ],
       "cacheConfig": {
         "maxSize": 50,
         "maxAge": "30d",

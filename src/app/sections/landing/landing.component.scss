@@ -2,7 +2,11 @@
 @import "~bootstrap/scss/variables";
 
 #subtitle {
-  color: #BBB;
+  color: #bbb;
+
+  span {
+    padding: 0 10px;
+  }
 
   .designer:hover {
     color: $green;
@@ -25,7 +29,7 @@
   position: absolute;
   bottom: 70px;
   opacity: 0;
-  
+
   width: 40px;
   height: 40px;
   border-radius: 50%;
