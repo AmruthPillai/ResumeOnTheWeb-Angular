@@ -25,7 +25,6 @@ import { SectionComponent } from './components/section/section.component';
 import { SkillsComponent } from './sections/left/skills/skills.component';
 import { SkillComponent } from './sections/left/skills/skill/skill.component';
 import { LanguagesComponent } from './sections/left/languages/languages.component';
-import { LanguageComponent } from './sections/left/languages/language/language.component';
 import { BlogComponent } from './sections/left/blog/blog.component';
 import { HobbiesComponent } from './sections/left/hobbies/hobbies.component';
 import { VolunteerWorkComponent } from './sections/left/volunteer-work/volunteer-work.component';
@@ -57,7 +56,6 @@ import { FooterComponent } from './sections/footer/footer.component';
     SkillsComponent,
     SkillComponent,
     LanguagesComponent,
-    LanguageComponent,
     BlogComponent,
     HobbiesComponent,
     VolunteerWorkComponent,

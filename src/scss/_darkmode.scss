@@ -1,3 +1,5 @@
+$primary: #EEEEEE;
+
 .dark-mode {
   background: #121212;
   color: #EEEEEE;
@@ -9,5 +11,10 @@
 
   hr {
     background-color: #444;
+  }
+
+  .form-control {
+    background-color: #121212;
+    color: #EEE;
   }
 }

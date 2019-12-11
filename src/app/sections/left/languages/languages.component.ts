@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-languages',
@@ -6,27 +7,38 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./languages.component.scss']
 })
 export class LanguagesComponent implements OnInit {
+  faCheck = faCheck;
 
   languages = [
     {
       name: 'English',
-      percent: 95
+      read: true,
+      write: true,
+      speak: true
     },
     {
       name: 'Tamil (தமிழ்)',
-      percent: 85
+      read: true,
+      write: true,
+      speak: true
     },
     {
       name: 'Kannada (ಕನ್ನಡ)',
-      percent: 80
+      read: true,
+      write: true,
+      speak: true
     },
     {
       name: 'Hindi (हिंदी)',
-      percent: 40
+      read: true,
+      write: true,
+      speak: false
     },
     {
       name: 'German',
-      percent: 10
+      read: true,
+      write: false,
+      speak: true
     }
   ];
 
