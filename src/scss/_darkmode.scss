@@ -1,0 +1,13 @@
+.dark-mode {
+  background: #121212;
+  color: #EEEEEE;
+
+  .list-group-item {
+    background: transparent;
+    border-color: #444;
+  }
+
+  hr {
+    background-color: #444;
+  }
+}

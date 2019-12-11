@@ -1,19 +1,12 @@
-// Bootstrap
-@import "~bootstrap/scss/bootstrap";
-
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 
-.font-weight-bold {
-  font-weight: 600 !important
-}
-
-.font-weight-bolder {
-  font-weight: 700 !important
-}
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
 
 // Partials
 @import 'scss/variables';
+@import 'scss/darkmode';
 
 // Global Styles
 html,
@@ -42,4 +35,12 @@ p {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.font-weight-bold {
+  font-weight: 600 !important
+}
+
+.font-weight-bolder {
+  font-weight: 700 !important
 }
