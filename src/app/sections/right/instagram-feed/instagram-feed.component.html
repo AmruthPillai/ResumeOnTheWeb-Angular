@@ -1,7 +1,8 @@
 <app-section heading="Instagram Feed">
-  <div id="feed" class="d-flex flex-wrap justify-content-center" snInViewport (inViewportChange)="animate($event)">
+  <div (inViewportChange)="animate($event)" class="mx-2 mx-md-0 d-flex flex-wrap justify-content-between" id="feed"
+       snInViewport>
     <a class="photo d-flex" [href]="photo.link" *ngFor="let photo of instaFeed" target="_blank">
-      <img class="img-fluid" [src]="photo.image">
+      <img [src]="photo.image" alt="Open in Instagram" class="img-fluid">
     </a>
   </div>
 </app-section>

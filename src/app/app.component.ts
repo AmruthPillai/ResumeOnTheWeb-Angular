@@ -9,7 +9,7 @@ export class AppComponent {
   darkMode: boolean;
 
   constructor() {
-    this.darkMode = false;
+    this.darkMode = true;
   }
 
   toggleDarkMode() {

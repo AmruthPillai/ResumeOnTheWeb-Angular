@@ -1,6 +1,6 @@
 <section id="brightness" class="cursor-pointer d-none d-md-block" (click)="toggleDarkMode()">
-  <img *ngIf="darkMode" src="../assets/brightness/moon.svg" alt="Make it bright!">
-  <img *ngIf="!darkMode" src="../assets/brightness/sun.svg" alt="Make it dark!">
+  <img *ngIf="darkMode" alt="Make the world a brighter place!" src="./assets/brightness/moon.svg">
+  <img *ngIf="!darkMode" alt="Come and join the dark side!" src="./assets/brightness/sun.svg">
 </section>
 
 <div [class.dark-mode]="darkMode" [class.light-mode]="!darkMode">
