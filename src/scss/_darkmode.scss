@@ -1,20 +1,43 @@
-$primary: #EEEEEE;
+$dark: #121212;
+$light: #FFFFFF;
+$gray: #888888;
 
 .dark-mode {
-  background: #121212;
-  color: #EEEEEE;
+  background: $dark;
+  color: $light;
+  transition: all .5s ease-in-out;
 
   .list-group-item {
     background: transparent;
-    border-color: #444;
+    border-color: $gray;
   }
 
   hr {
-    background-color: #444;
+    background-color: $gray;
   }
 
   .form-control {
-    background-color: #121212;
-    color: #EEE;
+    background-color: $dark;
+    color: $light;
+  }
+}
+
+.light-mode {
+  background: $light;
+  color: $dark;
+  transition: all .5s ease-in-out;
+
+  .list-group-item {
+    background: transparent;
+    border-color: $gray;
+  }
+
+  hr {
+    background-color: $gray;
+  }
+
+  .form-control {
+    background-color: $light;
+    color: $dark;
   }
 }

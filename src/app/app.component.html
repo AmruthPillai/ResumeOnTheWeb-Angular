@@ -1,4 +1,9 @@
-<div class="dark-mode">
+<section id="brightness" class="cursor-pointer d-none d-md-block" (click)="toggleDarkMode()">
+  <img *ngIf="darkMode" src="../assets/brightness/moon.svg" alt="Make it bright!">
+  <img *ngIf="!darkMode" src="../assets/brightness/sun.svg" alt="Make it dark!">
+</section>
+
+<div [class.dark-mode]="darkMode" [class.light-mode]="!darkMode">
   <!-- Navigation -->
   <div class="d-flex justify-content-center">
     <div id="navigation" class="position-absolute">

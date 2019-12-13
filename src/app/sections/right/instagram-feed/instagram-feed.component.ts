@@ -14,6 +14,7 @@ interface Feed {
   styleUrls: ['./instagram-feed.component.scss']
 })
 export class InstagramFeedComponent implements OnInit {
+  readonly MAX_SIZE = 8;
   instaFeed: Array<Feed>;
   faInstagram = faInstagram;
 
@@ -29,6 +30,8 @@ export class InstagramFeedComponent implements OnInit {
           link: `https://www.instagram.com/p/${edge['node']['shortcode']}/`
         });
       });
+
+      this.instaFeed = this.instaFeed.slice(0, this.MAX_SIZE);
     });
   }
 
