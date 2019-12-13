@@ -1,8 +1,8 @@
 {
-  "name": "amruthpillai",
-  "short_name": "amruthpillai",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "name": "Amruth Pillai's Resume on the Web",
+  "short_name": "Amruth Pillai",
+  "theme_color": "#121212",
+  "background_color": "#FFFFFF",
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
