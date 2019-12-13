@@ -1,7 +1,29 @@
 <app-section heading="Languages">
-  <div id="languages">
-    <div *ngFor="let language of languages">
-      <app-language [name]="language.name" [percent]="language.percent"></app-language>
-    </div>
-  </div>
+  <table class="table table-borderless">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Read</th>
+        <th>Write</th>
+        <th>Speak</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let language of languages">
+        <th>{{ language.name }}</th>
+        <td>
+          <fa-icon *ngIf="language.read" class="text-success" [icon]="faCheck">
+          </fa-icon>
+        </td>
+        <td>
+          <fa-icon *ngIf="language.write" class="text-success" [icon]="faCheck">
+          </fa-icon>
+        </td>
+        <td>
+          <fa-icon *ngIf="language.speak" class="text-success" [icon]="faCheck">
+          </fa-icon>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </app-section>

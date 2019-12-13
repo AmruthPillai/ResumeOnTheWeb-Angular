@@ -1,7 +1,16 @@
+#brightness {
+  position: fixed;
+  z-index: 5;
+  top: 15px;
+  right: 30px;
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
 #navigation {
   top: -100px;
 }
 
-#landing {
-  background: url('/assets/backgrounds/lightpaperfibers.png');
-}

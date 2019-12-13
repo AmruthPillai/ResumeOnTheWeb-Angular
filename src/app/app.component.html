@@ -1,34 +1,41 @@
-<!-- Navigation -->
-<div class="d-flex justify-content-center">
-  <div id="navigation" class="position-absolute">
-    <app-navigation></app-navigation>
-  </div>
-</div>
+<section id="brightness" class="cursor-pointer d-none d-md-block" (click)="toggleDarkMode()">
+  <img *ngIf="darkMode" alt="Make the world a brighter place!" src="./assets/brightness/moon.svg">
+  <img *ngIf="!darkMode" alt="Come and join the dark side!" src="./assets/brightness/sun.svg">
+</section>
 
-<!-- Landing Section -->
-<div id="landing" class="container-fluid">
-  <div class="h-100vh d-flex justify-content-center align-items-center">
-    <app-landing></app-landing>
-  </div>
-</div>
-
-<!-- Resume Section -->
-<div id="resume" class="container">
-  <div class="row">
-    <div class="col-12 col-lg">
-      <app-left></app-left>
-    </div>
-    <div class="col-12 col-lg">
-      <app-right></app-right>
+<div [class.dark-mode]="darkMode" [class.light-mode]="!darkMode">
+  <!-- Navigation -->
+  <div class="d-flex justify-content-center">
+    <div id="navigation" class="position-absolute">
+      <app-navigation></app-navigation>
     </div>
   </div>
+
+  <!-- Landing Section -->
+  <div id="landing" class="container-fluid">
+    <div class="h-100vh d-flex justify-content-center align-items-center">
+      <app-landing></app-landing>
+    </div>
+  </div>
+
+  <!-- Resume Section -->
+  <div id="resume" class="container">
+    <div class="row">
+      <div class="col-12 col-lg">
+        <app-left></app-left>
+      </div>
+      <div class="col-12 col-lg">
+        <app-right></app-right>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resume Download -->
+  <app-pdf-download></app-pdf-download>
+
+  <!-- Contact Me -->
+  <app-contact></app-contact>
+
+  <!-- Footer -->
+  <app-footer></app-footer>
 </div>
-
-<!-- Resume Download -->
-<app-pdf-download></app-pdf-download>
-
-<!-- Contact Me -->
-<app-contact></app-contact>
-
-<!-- Footer -->
-<app-footer></app-footer>
