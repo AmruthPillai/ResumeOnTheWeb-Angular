@@ -1,4 +1,4 @@
-@import '~src/scss/variables';
+@import "~src/scss/variables";
 
 .icon {
   width: 34px;
@@ -9,7 +9,7 @@
   >li {
     padding-top: 2em;
     padding-bottom: 2em;
-    transition: $default-transition;
+    transition: $transition;
 
     .grade {
       color: #CCC;
@@ -18,7 +18,7 @@
     &:hover {
       padding-top: 3em;
       padding-bottom: 3em;
-      transition: $default-transition;
+      transition: $transition;
     }
   }
 }

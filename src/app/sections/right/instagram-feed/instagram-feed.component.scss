@@ -1,9 +1,9 @@
-@import '~src/scss/variables';
+@import "~src/scss/variables";
 
 #feed {
   .photo {
     opacity: 0;
-    transition: $default-transition;
+    transition: $transition;
 
     img {
       width: 130px;
@@ -14,7 +14,7 @@
 
     &:hover {
       opacity: .75 !important;
-      transition: $default-transition;
+      transition: $transition;
     }
   }
 }

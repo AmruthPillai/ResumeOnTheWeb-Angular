@@ -5,7 +5,7 @@
         <label class="control-label h6" for="name">Name</label>
       </div>
       <div class="col">
-        <input class="form-control" type="text" name="name" placeholder="John Appleseed" [(ngModel)]="formModel.name"
+        <input id="name" class="form-control" type="text" name="name" placeholder="John Appleseed" [(ngModel)]="formModel.name"
           required>
         <small class="text-muted">Who in the world are you?</small>
       </div>
@@ -16,7 +16,7 @@
         <label class="control-label h6" for="email">E-Mail</label>
       </div>
       <div class="col">
-        <input class="form-control" type="email" name="email" placeholder="someone@example.com"
+        <input id="email" class="form-control" type="email" name="email" placeholder="someone@example.com"
           [(ngModel)]="formModel.email" required>
         <small class="text-muted">How in the world would I be able to contact you back?</small>
       </div>
@@ -27,7 +27,7 @@
         <label class="control-label h6" for="message">Message</label>
       </div>
       <div class="col">
-        <textarea class="form-control" name="message" rows="4" [(ngModel)]="formModel.message"
+        <textarea id="message" class="form-control" name="message" rows="4" [(ngModel)]="formModel.message"
           placeholder="Type your message here" required></textarea>
         <small class="text-muted">What on earth would you possibly want to say?</small>
       </div>
@@ -40,11 +40,11 @@
       </div>
       <div class="col-md-4 col-lg-3">
         <button class="btn btn-primary btn-lg w-100 h-100" [disabled]="!contactForm.valid" (click)="onSubmit()">
-          <div class="d-flex flex-column">
+          <span class="d-flex flex-column">
             <fa-icon class="paper-plane" [icon]="faPaperPlane"></fa-icon>
             <small class="button-text text-uppercase font-weight-bolder"
               style="font-size: .6em;">{{ buttonText }}</small>
-          </div>
+          </span>
         </button>
       </div>
     </div>

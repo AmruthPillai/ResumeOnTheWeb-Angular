@@ -1,4 +1,4 @@
-@import '~src/scss/variables';
+@import "~src/scss/variables";
 
 .hobby {
   display: flex;
@@ -17,7 +17,7 @@
     height: 3em;
     text-align: center;
     margin-top: 30px;
-    transition: $default-transition;
+    transition: $transition;
   }
 
   p {
@@ -27,19 +27,19 @@
     font-size: .8em;
     font-weight: 900;
     text-transform: uppercase;
-    transition: $default-transition;
+    transition: $transition;
   }
 
   &:hover {
     svg {
       margin-top: 20px;
-      transition: $default-transition;
+      transition: $transition;
     }
 
     p {
       display: inline;
       opacity: 100;
-      transition: $default-transition;
+      transition: $transition;
     }
   }
 }

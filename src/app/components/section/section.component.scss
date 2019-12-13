@@ -7,7 +7,7 @@ section {
     h6 {
       color: #BBB;
       font-size: 1em;
-      transition: $default-transition;
+      transition: $transition;
     }
 
     @include media-breakpoint-down(sm) {
@@ -20,7 +20,7 @@ section {
   &:hover {
     .heading h6 {
       color: $red;
-      transition: $default-transition;
+      transition: $transition;
     }
   }
 }

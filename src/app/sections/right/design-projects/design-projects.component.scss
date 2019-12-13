@@ -1,15 +1,15 @@
-@import '~src/scss/variables';
+@import "~src/scss/variables";
 
 .gallery {
   img {
     width: 100%;
     height: 150px;
     object-fit: cover;
-    transition: $default-transition;
+    transition: $transition;
 
     &:hover {
       opacity: .75;
-      transition: $default-transition;
+      transition: $transition;
     }
   }
 }

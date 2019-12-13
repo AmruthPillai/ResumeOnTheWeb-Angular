@@ -1,4 +1,4 @@
-@import '~src/scss/variables';
+@import "~src/scss/variables";
 
 span {
   line-height: 1.6em;
@@ -12,10 +12,10 @@ img {
 .line {
   position: relative;
   left: 0;
-  transition: $default-transition;
+  transition: $transition;
 
   &:hover {
     left: 15px;
-    transition: $default-transition;
+    transition: $transition;
   }
 }

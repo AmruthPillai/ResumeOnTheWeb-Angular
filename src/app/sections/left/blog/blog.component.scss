@@ -1,4 +1,4 @@
-@import '~src/scss/variables';
+@import "~src/scss/variables";
 
 .article {
   opacity: 0;
@@ -9,7 +9,7 @@
     width: 120px;
     height: 60px;
     object-fit: cover;
-    transition: $default-transition;
+    transition: $transition;
   }
 
   .date {
@@ -22,7 +22,7 @@
   &:hover {
     img {
       height: 100px;
-      transition: $default-transition;
+      transition: $transition;
     }
 
     .title {

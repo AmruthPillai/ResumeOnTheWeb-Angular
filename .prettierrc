@@ -1,4 +1,4 @@
-arrowParens: true
+arrowParens: always
 singleQuote: true
 trailingComma: "all"
 jsxBracketSameLine: true

@@ -52,15 +52,15 @@ export class SocialComponent implements OnInit {
         opacity: 1,
       })
       .add({
+        targets: '.facebook',
+        opacity: 1,
+      })
+      .add({
         targets: '.twitter',
         opacity: 1,
       })
       .add({
         targets: '.googlemaps',
-        opacity: 1,
-      })
-      .add({
-        targets: '.facebook',
         opacity: 1,
       });
   }

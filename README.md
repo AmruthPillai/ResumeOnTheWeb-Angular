@@ -1,4 +1,4 @@
-<p align="center">
+<p style="text-align: center">
 	<img src="https://i.imgur.com/WnVVMvv.png" width="500px" alt="Amruth Pillai's Resume on the Web">
 </p>
 

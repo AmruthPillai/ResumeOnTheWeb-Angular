@@ -4,28 +4,28 @@
       <tab heading="Graphic Design">
         <div class="gallery d-flex">
           <div *ngFor="let image of graphicDesignProjects; let i = index">
-            <img [src]="image.src" (click)="open('graphic', i)" />
+            <img [src]="image.src" alt="Graphic Design Project" (click)="open('graphic', i)" />
           </div>
         </div>
       </tab>
       <tab heading="Web Design">
         <div class="gallery d-flex">
           <div *ngFor="let image of webDesignProjects; let i = index">
-            <img [src]="image.src" (click)="open('web', i)" />
+            <img [src]="image.src" alt="Web Design Project" (click)="open('web', i)" />
           </div>
         </div>
       </tab>
       <tab heading="UI/UX Design">
         <div class="gallery d-flex">
           <div *ngFor="let image of uiuxDesignProjects; let i = index">
-            <img [src]="image.src" (click)="open('uiux', i)" />
+            <img [src]="image.src" alt="UI/UX Design Project" (click)="open('uiux', i)" />
           </div>
         </div>
       </tab>
       <tab heading="Print Design">
         <div class="gallery d-flex">
           <div *ngFor="let image of printDesignProjects; let i = index">
-            <img [src]="image.src" (click)="open('print', i)" />
+            <img [src]="image.src" alt="Print Design Project" (click)="open('print', i)" />
           </div>
         </div>
       </tab>

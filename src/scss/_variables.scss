@@ -1,7 +1,10 @@
-// Bootstrap
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 
-$custom-font: 'Open Sans', sans-serif;
-$default-transition: all .2s ease-in-out;
+$dark: #121212;
+$light: #FFFFFF;
+$border-dark: #252525;
+$border-light: #DDDDDD;
+$transition: all .5s ease-in-out;
+$font-family: 'Open Sans', sans-serif;

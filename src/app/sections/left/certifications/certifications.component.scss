@@ -1,4 +1,4 @@
-@import '~src/scss/variables';
+@import "~src/scss/variables";
 
 .icon {
   width: 60px;
@@ -9,7 +9,7 @@
   >li {
     padding-left: 0;
     padding-right: 0;
-    transition: $default-transition;
+    transition: $transition;
 
     span {
       line-height: 1.2em;
@@ -17,7 +17,7 @@
 
     &:hover {
       padding-left: 1em;
-      transition: $default-transition;
+      transition: $transition;
     }
   }
 }

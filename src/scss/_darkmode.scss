@@ -1,43 +1,58 @@
-$dark: #121212;
-$light: #FFFFFF;
-$gray: #DDD;
+@import "variables";
 
 .dark-mode {
   background: $dark;
   color: $light;
-  transition: all .5s ease-in-out;
+  transition: $transition;
 
   .list-group-item {
     background: transparent;
-    border-color: $gray;
+    border-color: $border-dark;
+    transition: $transition;
+  }
+
+  section .heading {
+    border-color: $border-dark !important;
+    transition: $transition;
   }
 
   hr {
-    background-color: $gray;
+    background-color: $border-dark;
+    transition: $transition;
   }
 
   .form-control {
     background-color: $dark;
     color: $light;
+    border-color: $border-dark !important;
+    transition: $transition;
   }
 }
 
 .light-mode {
   background: $light;
   color: $dark;
-  transition: all .5s ease-in-out;
+  transition: $transition;
 
   .list-group-item {
     background: transparent;
-    border-color: $gray;
+    border-color: $border-light;
+    transition: $transition;
+  }
+
+  section .heading {
+    border-color: $border-light !important;
+    transition: $transition;
   }
 
   hr {
-    background-color: $gray;
+    background-color: $border-light;
+    transition: $transition;
   }
 
   .form-control {
     background-color: $light;
     color: $dark;
+    transition: $transition;
   }
 }
