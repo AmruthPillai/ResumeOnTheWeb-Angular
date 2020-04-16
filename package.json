@@ -39,7 +39,7 @@
     "npm-check-updates": "^4.0.1",
     "popper.js": "^1.16.0",
     "rxjs": "~6.5.3",
-    "terser": "^4.4.2",
+    "terser": "^4.6.11",
     "tslib": "^1.10.0",
     "zone.js": "^0.9.1"
   },
